@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  bot:
+    build: .
+    ports:
+     - "8080:80"
+    volumes:
+     - ./webapp:/home
+     - ./UPLOADS:/home/UPLOADS
