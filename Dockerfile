@@ -17,6 +17,7 @@ COPY config/default.conf /etc/nginx/conf.d/default.conf
 # Configure PHP-FPM
 COPY config/fpm-www.conf /usr/local/etc/php-fpm.d/www.conf
 
+# Configure SUpervisord
 COPY config/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 EXPOSE 80
